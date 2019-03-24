@@ -1,10 +1,84 @@
+
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" >
   <head>
-    <meta charset="utf-8">
-    <title></title>
+    <meta charset="UTF-8">
+    <title>Diabetes</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel='stylesheet' href='https://unpkg.com/bulma@0.7.4/css/bulma.min.css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel='stylesheet' href="../css/prism.css">
+    <link rel="stylesheet" href="../css/cheatsheet.css">
   </head>
   <body>
-      <h1>Oi</h1>
-  </body>
+    <section class="hero is-primary">
+      <div class="hero-body">
+        <div class="columns">
+          <div class="column is-12">
+            <div class="container content">
+
+              <h1 class="title">Diabetes</h1>
+              <h3 class="subtitle">
+              Pequeno projeto para auxiliar o controle glicêmico
+              </h3>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-3">
+            <aside class="is-medium menu">
+          <p class="menu-label">
+            MENU
+          </p>
+          <ul class="menu-list">
+            <li class="is-right"><a href="conversor" class="is-active"><i class="fas fa-calculator"></i> Conversor</a></li>
+
+          </ul>
+
+            </aside>
+          </div>
+          <div class="column is-9">
+            <div class="content is-medium">
+          <h3 class="title is-3">Últimas</h3>
+              <div class="box">
+                <h4 id="const" class="title is-3">Conversor mg/dL.</h4>
+                <article class="message is-primary">
+
+                  <div class="message-body">
+                    Existem duas formas diferentes de medir os níveis de glucose sanguínea: esta medição pode ser efetuada em termos de concentração molar, medida em mmol/L ou de concentração mássica, medida em mg/dL.
+                  </div>
+                </article>
+                <a href="conversor" class="button is-primary">
+                Acessar Conversor</a>
+            </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<footer class="footer">
+
+
+
+</footer>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.js'></script>
+<script>
+  window.addEventListener('resize', () => {
+  const divs = document.querySelectorAll(".menu-list");
+  if (window.innerWidth < 768){
+    divs.forEach(div => div.classList.add("tags"));
+  }
+  else {
+    divs.forEach(div => div.classList.remove("tags"));
+  }
+});
+</script>
+</body>
 </html>
