@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Diabetes</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <h1 class="display-4 text-center">Conversor</h1>
+
+
+          <p class="lead pt-4">
+            Existem duas formas diferentes de medir os níveis de glucose sanguínea: esta medição pode ser efetuada em termos de concentração molar, medida em mmol/L ou de concentração mássica, medida em mg/dL.
+          </p>
+
+          <form>
+
+
+          <div class="input-group">
+            <input type="number" id="mgxdLInput" class="form-control form-control-lg" placeholder="Informe o valor em mg/dL" aria-label="mg/dL" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <span class="input-group-text" id="basic-addon2">mg/dL</span>
+            </div>
+          </div>
+          <div class="input-group my-3">
+            <input type="number" id="mmolxLInput" class="form-control form-control-lg" placeholder="Informe o valor em mmol/L" aria-label="mmol/L" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <span class="input-group-text" id="basic-addon2">mmol/L</span>
+            </div>
+          </div>
+
+          </form>
+
+
+          <div id="output">
+            <div class="card bg-primary my-2">
+              <div class="card-body">
+                <h4>mmol/L: </h4>
+                <h1 id="mmolxLOutput"></h1>
+              </div>
+            </div>
+            <div class="card bg-primary mb-4">
+              <div class="card-body">
+                <h4>mg/dL: </h4>
+                <h1 id="mgxdLOutput"></h1>
+              </div>
+            </div>
+
+            <div class="alert alert-warning" role="alert">
+              <ul>
+                <li>
+                  mg/dL em mmol/L, fator de conversão: 1 mg/dL = 0.0555 mmol/L <br>
+                </li>
+                <li>
+                  mmol/L em mg/dL, fator de conversão: 1 mmol/L = 18,018 mg/dL
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="../js/conversor.js"></script>
+
+  </body>
+</html>
